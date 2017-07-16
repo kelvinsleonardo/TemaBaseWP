@@ -1,4 +1,3 @@
-
 <?php
 /**
  * @category Base
@@ -7,30 +6,21 @@
  * @license  GPL-2 http://www.gnu.org/licenses/gpl-2.0.html
  */
 
-
+// Header
 get_header();
+
 ?>
 
-<div id="primary">
-    <div id="content" role="main">
+    <!-- Content -->
+    <div class="container">
+        <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut posuere lectus dui, nec molestie enim iaculis a.
+            Phasellus quis rhoncus elit, a facilisis velit. Integer at mi at lectus pretium commodo. Donec vel ligula in
+            ligula gravida pulvinar vel vel turpis. Mauris cursus facilisis lorem, ut convallis odio tincidunt at. Nam
+            id cursus risus. Maecenas ut volutpat metus. Suspendisse viverra tincidunt urna. Nullam in urna sed est
+            pharetra tempus et a magna. Proin consequat odio et viverra vehicula.
 
-        <?php if (have_posts()) : ?>
+        </h2>
+    </div><!-- #primary -->
 
-            <?php /* Inicia o loop de posts */ ?>
-            <?php while (have_posts()) : the_post(); ?>
-
-                <?php get_template_part('loop'); ?>
-
-            <?php endwhile; ?>
-
-        <?php else : ?>
-
-            <?php get_template_part('not-found'); ?>
-
-        <?php endif; ?>
-
-    </div><!-- #content -->
-</div><!-- #primary -->
-
-<?php get_sidebar(); ?>
+    <!-- Footer -->
 <?php get_footer(); ?>
